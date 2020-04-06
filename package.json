@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "start:prod": "AOT=1 ROLLUP=1 meteor --production",
+    "test": "TEST_BROWSER_DRIVER=puppeteer meteor test --driver-package=ardatan:mocha --raw-logs",
+    "test:ci": "TEST_BROWSER_DRIVER=puppeteer meteor test --driver-package=ardatan:mocha --raw-logs --once"
+  },
+  "dependencies": {
+    "@angular/animations": "^9.1.0",
+    "@angular/cdk": "^9.1.0",
+    "@angular/common": "^9.1.0",
+    "@angular/compiler": "^9.1.0",
+    "@angular/core": "^9.1.0",
+    "@angular/forms": "^9.1.0",
+    "@angular/material": "^9.1.0",
+    "@angular/platform-browser": "^9.1.0",
+    "@angular/platform-browser-dynamic": "^9.1.0",
+    "@angular/platform-server": "^9.1.0",
+    "@angular/router": "^9.1.0",
+    "@babel/runtime": "^7.8.3",
+    "@ionic/storage": "^2.2.0",
+    "core-js": "2.5.7",
+    "meteor-node-stubs": "^1.0.0",
+    "meteor-rxjs": "0.4.14",
+    "rxjs": "^6.5.4",
+    "zone.js": "^0.10.3"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^9.1.0",
+    "@types/chai": "4.1.7",
+    "@types/meteor": "1.4.23",
+    "@types/mocha": "5.2.5",
+    "@types/sinon": "5.0.7",
+    "chai": "4.2.0",
+    "mocha": "5.2.0",
+    "puppeteer": "1.10.0",
+    "sinon": "7.1.1",
+    "typescript": "3.8.3"
+  }
+}
